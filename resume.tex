@@ -1,0 +1,162 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Resume 		%
+%                       %
+% Source Credits:       %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+% IBM Plex Sans Font
+\usepackage[sfdefault]{plex-sans}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+% Custom Commnads
+
+% items under categories
+\newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
+\newcommand{\resitemt}[1]{\item #1 \vspace{-6pt}}
+
+% Subject Headings (Work Experience, Education, etc.)
+\newcommand{\resheading}[1]{{\large {\textbf{#1 \vphantom{p\^{E}}}}}\vspace{-3pt}}
+
+% Top half of big headings
+\newcommand{\topheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+\end{tabular*}}
+
+% Bottom half of big headings
+\newcommand{\bottomheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textit{\textbf{#1}} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+
+%---------------------------------
+%
+%     FRONT SIDE BEGINS HERE
+%
+%---------------------------------
+
+\begin{center}
+\textbf{\Large Cameron Weinfurt}
+\end{center}
+\vspace{-0.45cm}
+\noindent\makebox[\linewidth]{\rule{7in}{0.4pt}}
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+Email: weinfurt.c@hotmal.com & Cell: (845) 444-0356 \\
+GitHub: https://github.com/Caeleron & Website: https://caeleron.github.io \\
+LinkedIn: https://www.linkedin.com/in/cameron-weinfurt-92070b204/ \\
+\end{tabular*}
+
+\vspace{0.1in}
+
+\resheading{Experience}
+\begin{itemize}
+\item[]
+	\topheading{Clarkson University}{Potsdam, NY}
+	\bottomheading{Teacher's Assistant for Operating Systems course}{January 2021 - May 2021}
+	\begin{itemize}
+			\resitem{Handle the presentation and grading for course projects}
+			\resitem{Create, deliver and grade material for several lab sessions}
+			\resitem{Coordinate weekly with the professor and other TA on upcoming material}
+			\resitem{Provide assistance to students through email, live office hours and class forum}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Education}
+\begin{itemize}
+\item[]
+	\topheading{Clarkson University}{Potsdam, NY}
+	\bottomheading{B.S. Computer Science with Math Minor (3.359 GPA)}{August 2018 - December 2021}
+\end{itemize}
+
+% FOOTER BEGINS HERE
+
+\resheading{Extracurricular}
+\begin{itemize}
+\item[]
+\topheading{Clarkson University}{Potsdam, NY}
+\bottomheading{Clarkson Open Source Institute (COSI)}{August 2019 - November 2020}
+\begin{itemize}
+	\resitem{Manage Juniper and TP-Link switches configured with VLANs}
+	\resitem{Configure the local firewall, DNS and DHCP services\\using provided public IPv4 /23 range}
+	\resitem{Maintain bare metal systems maintenance of 11 servers in two locations}
+	\resitem{Deploy system builds for computer lab and connected classroom}
+	\resitem{Provision virtual machines university organizations,\\and student lead projects and websites}
+	\resitem{Maintain a public open-source software mirror, which mirrors several Linux distributions and individual software packages such as Blender and VLC}
+	\resitem{Assist and support in maintaining professor research servers}
+	\resitem{Presented an introduction to software development on Linux to other university students}
+\end{itemize}
+\end{itemize}
+
+\resheading{Additional Skills}
+\begin{itemize}
+
+\item[]
+\topheading{Programming Languages}{}
+\begin{description}
+	\item[]{Confident: Rust, C, C++, Lua}
+	\item[]{Familiar: Java, Kotlin, C\#, Haskell}
+\end{description}
+
+\item[]
+\topheading{Linux}{}
+\begin{itemize}
+	\resitem{Experience with maintaining systems running Ubuntu, Arch, Gentoo and NixOS}
+	\resitem{Worked with the libvirt/qemu virtualization environment}
+\end{itemize}
+
+\item[]
+\topheading{Tooling}{}
+\begin{itemize}
+	\resitem{Extensive use of version control software with Git}
+	\resitem{Writing Makefiles for GNU Make}
+	\resitem{Perform network administration using iptables, dhcpd, bind9, VLANs}
+	\resitem{Hosting websites via Nginx with HTTPS support}
+\end{itemize}
+\end{itemize}
+
+% FOOTER
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+& \textit{Updated February 25th, 2021}\\
+\end{tabular*}
+
+
+%---------------------------------
+%
+%     END OF RESUME
+%
+%---------------------------------
+
+\end{document}
